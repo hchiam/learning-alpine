@@ -11,3 +11,5 @@ Fireship tutorial: <https://youtu.be/cuHDQhDhvPE?t=1115>
 <https://alpinejs.dev>
 
 <https://alpinejs.dev/start-here>
+
+<https://github.com/alpinejs/alpine>
