@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      defer=""
+      src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"
+    ></script>
+  </head>
+  <body>
+    <a href="https://alpinejs.dev/start-here" target="_blank"
+      >https://alpinejs.dev/start-here</a
+    >
+
+    <h1 x-data="{ message: 'Alpine.js is awesome!' }" x-text="message"></h1>
+
+    <hr />
+
+    <div x-data="{ count: 0 }">
+      <button x-on:click="count++">Increment</button>
+      <span x-text="count"></span>
+    </div>
+
+    <hr />
+
+    <div x-data="{ open: false }">
+      <button @click="open = ! open">Toggle</button>
+      <span x-show="open" x-transition="" @click.outside="open = false">
+        Contents...
+      </span>
+    </div>
+
+    <hr />
+
+    <div
+      x-data="{
+        search: '',
+        items: ['foo', 'bar', 'baz'],
+        get filteredItems() {
+            return this.items.filter(
+                i => i.startsWith(this.search)
+            )
+        }
+    }"
+    >
+      <input x-model="search" placeholder="Search..." aria-label="search" />
+      <ul>
+        <template x-for="item in filteredItems" :key="item">
+          <li x-text="item"></li>
+        </template>
+      </ul>
+    </div>
+  </body>
+</html>

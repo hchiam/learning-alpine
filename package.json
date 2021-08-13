@@ -1,15 +1,19 @@
 {
-  "name": "learning-template",
-  "version": "1.0.0",
+  "name": "learning-alpine",
+  "version": "0.0.0",
   "main": "index.js",
-  "repository": "https://github.com/hchiam/learning-template.git",
+  "repository": "https://github.com/hchiam/learning-alpine.git",
   "author": "hchiam <hchiam@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
+    "start": "open index.html",
+    "dev": "open index.html",
     "test": "jest --bail --findRelatedTests **/*.js",
     "lint": "prettier --write *.{js,css,html,scss,json,md,ts,tsx}"
   },
-  "dependencies": {},
+  "dependencies": {
+    "alpinejs": "^3.2.3"
+  },
   "devDependencies": {
     "husky": "^4.3.0",
     "jest": "^27.0.4",

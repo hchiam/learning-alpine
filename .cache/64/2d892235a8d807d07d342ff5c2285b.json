@@ -1,0 +1,11 @@
+{
+  "id": "index.html",
+  "dependencies": [],
+  "generated": {
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Document</title>\n    <script defer=\"\" src=\"https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js\"></script>\n  </head>\n  <body>\n    <a href=\"https://alpinejs.dev/start-here\" target=\"_blank\">https://alpinejs.dev/start-here</a>\n\n    <h1 x-data=\"{ message: 'Alpine.js is awesome!' }\" x-text=\"message\"></h1>\n\n    <hr>\n\n    <div x-data=\"{ count: 0 }\">\n      <button x-on:click=\"count++\">Increment</button>\n      <span x-text=\"count\"></span>\n    </div>\n\n    <hr>\n\n    <div x-data=\"{ open: false }\">\n      <button @click=\"open = ! open\">Toggle</button>\n      <span x-show=\"open\" x-transition=\"\" @click.outside=\"open = false\">\n        Contents...\n      </span>\n    </div>\n\n    <hr>\n\n    <div x-data=\"{\n        search: '',\n        items: ['foo', 'bar', 'baz'],\n        get filteredItems() {\n            return this.items.filter(\n                i => i.startsWith(this.search)\n            )\n        }\n    }\">\n      <input x-model=\"search\" placeholder=\"Search...\" aria-label=\"search\">\n      <ul>\n        <template x-for=\"item in filteredItems\" :key=\"item\">\n          <li x-text=\"item\"></li>\n        </template>\n      </ul>\n    </div>\n  </body>\n</html>\n"
+  },
+  "sourceMaps": null,
+  "error": null,
+  "hash": "db6725b289d5c289798e564afa8655fa",
+  "cacheData": {}
+}
