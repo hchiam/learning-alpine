@@ -12,7 +12,7 @@
     "lint": "prettier --write *.{js,css,html,scss,json,md,ts,tsx}"
   },
   "dependencies": {
-    "alpinejs": "^3.2.3"
+    "alpinejs": "3.2.2"
   },
   "devDependencies": {
     "husky": "^4.3.0",
