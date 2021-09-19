@@ -1,6 +1,6 @@
 # Learning Alpine.js
 
-Just one of the things I'm learning. <https://github.com/hchiam/learning>
+Just one of the things I'm learning. <https://github.com/hchiam/learning> and <https://github.com/hchiam/learning-frameworks>
 
 It feels like Bootstrap/Tailwind CSS utility classes in your HTML, but with JavaScript-in-HTML. 4KB! You can import/install `alpinejs`, or just use a CDN link! You could work entirely in your HTML file.
 
